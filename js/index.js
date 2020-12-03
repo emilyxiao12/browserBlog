@@ -65,6 +65,26 @@ class Items extends Page{
 
 }
 
+class Contact extends Page{
+    render() {
+        $("#Contact").append(
+            <form action="${this.sUrlToEmailer}" method="POST">
+                <div class="form-group">
+                    <label>Name: <input name="name" placeholder="name" class="form-control" required /></label>
+                </div>
+                <div class="form-group">
+                    <label>Email: <input name="email" placeholder="email" type="email" class="form-control" required /></label>
+                
+                </div>
+                <div class="form-group">
+                    <label>Message: <textarea name="message" placeholder="type your message here" class="form-control" required></textarea></label>
+
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        )
+    }
+}
 class Section extends Page {
     constructor(oOptions) {
         super();
