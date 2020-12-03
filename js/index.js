@@ -82,7 +82,7 @@ class Contact extends Page{
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-        )
+        );
     }
 }
 class Section extends Page {
