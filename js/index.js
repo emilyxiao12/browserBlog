@@ -65,26 +65,7 @@ class Items extends Page{
 
 }
 
-class Contact extends Page{
-    render() {
-        $("#Contact").append(
-            <form action="${this.sUrlToEmailer}" method="POST">
-                <div class="form-group">
-                    <label>Name: <input name="name" placeholder="name" class="form-control" required /></label>
-                </div>
-                <div class="form-group">
-                    <label>Email: <input name="email" placeholder="email" type="email" class="form-control" required /></label>
-                
-                </div>
-                <div class="form-group">
-                    <label>Message: <textarea name="message" placeholder="type your message here" class="form-control" required></textarea></label>
 
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        );
-    }
-}
 class Section extends Page {
     constructor(oOptions) {
         super();
@@ -124,7 +105,26 @@ class Footer extends Page {
         );
     }
 }
+class Contact extends Page{
+    render() {
+        $("#Contact").append(`
+            <form action="${this.sUrlToEmailer}" method="POST">
+                <div class="form-group">
+                    <label>Name: <input name="name" placeholder="name" class="form-control" required /></label>
+                </div>
+                <div class="form-group">
+                    <label>Email: <input name="email" placeholder="email" type="email" class="form-control" required /></label>
+                
+                </div>
+                <div class="form-group">
+                    <label>Message: <textarea name="message" placeholder="type your message here" class="form-control" required></textarea></label>
 
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        `);
+    }
+}
 class Nav extends Page {
     render() {
         let sMenu = "";
@@ -166,6 +166,7 @@ class Portfolio extends Page {
         this.items = new Items(aItems);
         this.article = new Article();
         this.footer = new Footer();
+        this.contact = new Contact();
     }
     render() {
         this.header.render();
@@ -173,6 +174,7 @@ class Portfolio extends Page {
         this.items.render();
         this.article.render();
         this.footer.render();
+        this.contact.render();
     }
 }
 
