@@ -3,6 +3,9 @@
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
+.navbar-inverse .navbar-brand {
+    color: #d6d6d6;
+}
 
 section#itemsInner{
     display: flex;
