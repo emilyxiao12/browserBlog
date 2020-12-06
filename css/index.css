@@ -7,6 +7,9 @@
     color: #d6d6d6;
 }
 
+.btn-primary{
+    background-color: blueviolet;
+}
 section#itemsInner{
     display: flex;
     overflow-x: auto;
