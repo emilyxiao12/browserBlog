@@ -89,7 +89,7 @@ class Section extends Page {
 class Article extends Page {
     render() {
         for (let n = 0; n < aPages.length; n++) {
-            $("article#pages").append(
+            $("article#pagesSec").append(
                 `<section id="${aPages[n].title}"></section>`
             );
             new Section(aPages[n]).render();
