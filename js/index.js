@@ -78,9 +78,9 @@ class Section extends Page {
                 <div class="pageImage"><img src="${this.getImageSrc(this.oOptions.specialImage)}" alt="${this.getImageSrc(this.oItems[this.nCurrentItem].altText)}" /></div>
                 `);
             }    
-            $(`#${this.oOptions.title}`).append(`
+            /*$(`#${this.oOptions.title}`).append(`
                 <div class="markDownPage">${marked(sMarkdown)}</div>
-            `);
+            `);*/
 
         })
     }
