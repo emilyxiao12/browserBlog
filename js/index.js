@@ -100,15 +100,23 @@ class Article extends Page {
 class Footer extends Page {
     render() {
         const yToday = new Date().getFullYear();
-        $("footer").html(
-            `&copy; ${yToday} ${this.sName}`
-        );
+        //$("footer").html(
+        //    `&copy; ${yToday} ${this.sName}`
+       // );
+       $("footer").html(
+            `<div>
+            <strong><a href= "#"> Back to top </a></strong>
+            </div>
+                <div>&copy; ${yToday} ${this.sName}</div>`
+            
+       );
     }
 }
 class Contact extends Page{
     render() {
         $("#Contact").append(`
             <form action="${this.sUrlToEmailer}" method="POST">
+                <h1> Contact Us </h1>
                 <div class="form-group">
                     <label>Name: <input name="name" placeholder="name" class="form-control" required /></label>
                 </div>
@@ -122,6 +130,26 @@ class Contact extends Page{
                 </div>
                 <button type="submit">Send Message</button>
             </form>
+        `);
+    }
+}
+
+class About extends Page {
+    render(){
+        const about = aPages[0];
+        $.get(`${this.sBase}/pages/${about.fname}`, (markdown) =>{
+            $("#About").append(`
+                <div>
+                    <img src="${this.getImageSrc(about.specialImage)}" alt="${about.specialImage.altText}" /></div>
+                </div>
+
+            `);
+            $("#About").append(`
+                    <div class="markdownItem">${marked(markdown)}</div>
+            `)
+        });
+        $("#About").html(`
+            <h1> About me </h1>
         `);
     }
 }
@@ -144,7 +172,7 @@ class Nav extends Page {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Portfolio of ${this.sName}</a>
+                <a class="navbar-brand" href="#">${this.sName}</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -167,12 +195,14 @@ class Portfolio extends Page {
         this.article = new Article();
         this.footer = new Footer();
         this.contact = new Contact();
+        this.about = new About();
     }
     render() {
         this.header.render();
         this.nav.render();
         this.items.render();
         this.article.render();
+        this.about.render();
         this.footer.render();
         this.contact.render();
     }

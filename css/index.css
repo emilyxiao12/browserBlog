@@ -1,10 +1,51 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 
+
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
+
+.navbar-header{
+ background-color: lightblue;
+ color: black;
+}
+.navbar-inverse .navbar-collapse{
+    background-color: lightblue;
+    color: black;
+}
+/* Text Color for the drop down menu*/
+.navbar-inverse .navbar-nav>li>a {
+    color:black;
+}
+
+/*Color for the "portfolio of Emily Xiao */
 .navbar-inverse .navbar-brand {
-    color: #d6d6d6;
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+footer{
+    background-color: lightblue;
+    color: black;
+
+}
+
+form{
+    background-color: lightskyblue;
+}
+
+h2, .h2{
+    padding-inline-start: 10px;
+}
+img{
+    margin: 10px;
+}
+
+button{
+    margin-bottom: 20px;
 }
 
 .btn-primary{
@@ -37,7 +78,7 @@ div.moreright {
 }
 
 .scrollleft, .scrollright {
-    position: absolute;
+    position: static;
     transform: scaleY(2);
     bottom: 50%;
     font-size: 1.2em;
@@ -53,6 +94,8 @@ div.moreright {
 .scrollright{
     right: 0;
 }
+
+
 
 a.left-button, a.right-button {
     text-decoration: none;

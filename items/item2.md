@@ -25,3 +25,12 @@ The design process for the diversity solution was a a bit more difficult because
 As for the synthesized solution, I just combined the inclusion and diversity solutions together to create a final visualization for the synthesized view. When coming up with the final solution I sketched out a bunch of combined designs, and just chose the one that I thought would best represent both inclusion and diversity.
 
 For the design for both the inclusion and diversity design solutions I was challenged in way way that I had to put all my perceptions and interpretations that I had on someone that was under privileged, essentially keeping an open mind when thinking of them. From keeping an open mind I was able to execute the wanted possible solutions for both diversity and inclusion. Overall, I think the design process that I learned in a previous ux project helped me prepared for these design process that worked in this class. So there was not a lot of aspects that did not work, although the implementation of the synthesized solution would take a lot of time and money. I learned that from the design process to appreciate the time and effort put into each project given because it allows you evolve as a designer. This will help my evolution as an Inclusive Designer by keeping an open mind about going into a design project, trying considering everyone within each solution, designing with users not against.
+
+## My Angle
+
+When working on this project I could enhance my ability to apply this to real world situations by making connections and critique the in how the designs would survive real users.
+
+<div>
+    <strong> References: </strong>
+        <a href="https://students.wlu.ca/programs/arts/communication-studies/careers.html"> source link </a>
+</div>

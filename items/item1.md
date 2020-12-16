@@ -43,3 +43,12 @@ But actually before doing any of the research methods we wanted to do a google f
 <img src="/img/Journey.png" alt="group picture" style="float: left; margin-right: 10px" >
 
 This is a journey map/ empathy map that we did in order to find out where most students had the most issues in. In order for the data to really stimulate the feeling of an incoming student we asked siblings and students from other universities.
+
+## My Angle
+
+When working on this project I could enhance my communication, organizational, and collaboration skills until the end goal was reached.
+
+<div>
+    <strong> References: </strong>
+    <a href="https://students.wlu.ca/programs/arts/communication-studies/careers.html"> source link </a>
+</div>
